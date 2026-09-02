@@ -1,0 +1,4 @@
+import { Section } from '../../ui/Section'
+import { SectionHeading } from '../../ui/SectionHeading'
+const steps=[['01','Get in touch','Tell us about your outdoor project.'],['02','Discuss your ideas','Explore suitable options for your space.'],['03','Plan your project','Develop the right approach for your requirements.'],['04','Bring your space to life','Move forward with your outdoor project.']]
+export function GettingStarted(){return <Section><SectionHeading eyebrow="How to get started" heading="Start with a conversation." /><ol className="mt-10 grid gap-px bg-warm-grey sm:grid-cols-2 lg:grid-cols-4">{steps.map(([number,title,copy])=><li className="bg-canvas p-6" key={number}><p className="text-2xl font-semibold text-timber">{number}</p><h3 className="mt-8 text-xl font-semibold text-charcoal">{title}</h3><p className="mt-3 leading-7 text-charcoal/70">{copy}</p></li>)}</ol></Section>}
