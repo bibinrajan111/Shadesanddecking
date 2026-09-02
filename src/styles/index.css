@@ -5,6 +5,7 @@
 :root { color: #1c2025; background: #f3f0eb; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-synthesis: none; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; overflow-x: hidden; }
+#enquiry-form { scroll-margin-top: 6rem; }
 button, a { -webkit-tap-highlight-color: transparent; }
 *:focus-visible { outline: 3px solid #a56a35; outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
