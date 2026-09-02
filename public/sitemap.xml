@@ -1,7 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.shadesanddecking.co.nz/</loc></url>
-  <url><loc>https://www.shadesanddecking.co.nz/about</loc></url>
-  <url><loc>https://www.shadesanddecking.co.nz/services</loc></url>
-  <url><loc>https://www.shadesanddecking.co.nz/contact</loc></url>
-</urlset>
+<!-- This template is replaced during production builds when SITE_URL is configured. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>
