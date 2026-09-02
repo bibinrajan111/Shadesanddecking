@@ -1,0 +1,5 @@
+import { AnimatedSection } from '../../ui/AnimatedSection'
+import { Section } from '../../ui/Section'
+import { SectionHeading } from '../../ui/SectionHeading'
+import { ProjectPlaceholder } from '../ProjectPlaceholder'
+export function QualityCraftsmanship() { return <Section><div className="grid gap-10 lg:grid-cols-2 lg:items-center"><AnimatedSection className="order-2 lg:order-1"><SectionHeading eyebrow="Quality & craftsmanship" heading="Quality you can see. Service you can trust." /><div className="mt-7 max-w-xl space-y-5 leading-8 text-charcoal/75"><p>We value quality materials, careful workmanship and the small details that give an outdoor space a refined, lasting feel.</p><p>It is an approach that keeps the project practical while respecting the character of your home and outdoor setting.</p></div></AnimatedSection><AnimatedSection className="order-1 lg:order-2"><ProjectPlaceholder label="Quality and craftsmanship photography placeholder" className="aspect-[5/4]" /></AnimatedSection></div></Section> }

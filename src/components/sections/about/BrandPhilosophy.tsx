@@ -1,0 +1,5 @@
+import { motion, useReducedMotion } from 'framer-motion'
+import { revealUp, staggerContainer } from '../../../animations/variants'
+import { Container } from '../../ui/Container'
+const principles = [['CREATE.', 'Thoughtful spaces designed around your needs.'], ['RELAX.', 'Comfortable outdoor environments for everyday living.'], ['ENJOY.', 'Outdoor spaces made to become part of your home and lifestyle.']]
+export function BrandPhilosophy() { const reduced = useReducedMotion(); return <section className="bg-deep-charcoal py-16 text-white md:py-24"><Container><motion.div variants={staggerContainer(reduced)} initial="hidden" whileInView="visible" viewport={{ once: true, amount: .2 }} className="grid gap-10 md:grid-cols-3">{principles.map(([word, copy], i) => <motion.div key={word} variants={revealUp(reduced, i * .03)} className="border-t border-white/20 pt-6"><p className="text-4xl font-semibold tracking-[-.05em] text-bronze">{word}</p><p className="mt-5 max-w-xs leading-7 text-white/75">{copy}</p></motion.div>)}</motion.div></Container></section> }

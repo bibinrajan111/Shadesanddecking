@@ -1,0 +1,8 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { AppLayout } from './components/layout/AppLayout'
+import { Seo } from './components/ui/Seo'
+import { About } from './pages/About'
+import { Contact } from './pages/Contact'
+import { Home } from './pages/Home'
+import { Services } from './pages/Services'
+export function App() { return <BrowserRouter><Seo /><AppLayout><Routes><Route path="/" element={<Home />} /><Route path="/about" element={<About />} /><Route path="/services" element={<Services />} /><Route path="/contact" element={<Contact />} /></Routes></AppLayout></BrowserRouter> }
