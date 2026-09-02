@@ -1,0 +1,2 @@
+import { CTASection } from '../../ui/CTASection'
+export function AboutFinalCTA() { return <CTASection variant="light" eyebrow="Start your project" heading="Let’s create something you’ll enjoy." description="Get in touch with Shades and Decking NZ Limited to discuss your outdoor space and explore the possibilities for your project." primaryAction={{ label: 'Get a Free Consultation & Quote', to: '/contact' }} secondaryAction={{ label: 'Explore Our Services', to: '/services', variant: 'outline' }} /> }

@@ -1,0 +1,4 @@
+type Props = { className?: string; label?: string; priority?: boolean }
+export function ProjectPlaceholder({ className = '', label = 'Project photography placeholder', priority = false }: Props) {
+  return <div className={`relative isolate overflow-hidden bg-charcoal ${className}`} role="img" aria-label={label} data-priority={priority || undefined}><div className="absolute inset-0 bg-[linear-gradient(137deg,rgba(17,19,21,.15)_0%,rgba(17,19,21,.7)_100%),linear-gradient(115deg,#705033_0%,#a56a35_42%,#1c2025_43%,#111315_100%)]" /><div className="absolute -right-10 bottom-[-12%] h-[74%] w-[75%] border-l border-t border-white/25 bg-charcoal/35" /><div className="absolute bottom-[28%] left-0 h-px w-full bg-white/30" /><div className="absolute left-[18%] top-0 h-full w-px bg-white/15" /><p className="absolute bottom-5 left-5 text-[10px] font-bold uppercase tracking-[0.18em] text-white/70">{label}</p></div>
+}
