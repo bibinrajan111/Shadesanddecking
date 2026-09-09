@@ -1,0 +1,3 @@
+import { Button } from '../components/ui/Button'
+import { Container } from '../components/ui/Container'
+export function NotFound(){return <main className="bg-canvas"><Container><div className="py-24 md:py-32"><p className="text-xs font-bold uppercase tracking-[.2em] text-timber">404</p><h1 className="mt-5 text-5xl font-semibold tracking-[-.05em] text-charcoal">This page can’t be found.</h1><p className="mt-5 max-w-lg text-lg leading-8 text-charcoal/75">The page may have moved, or the address may be incorrect. Return home to continue exploring outdoor living solutions.</p><Button to="/" className="mt-8">Return to home</Button></div></Container></main>}

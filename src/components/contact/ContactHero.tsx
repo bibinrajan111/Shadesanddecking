@@ -1,0 +1,5 @@
+import { motion, useReducedMotion } from 'framer-motion'
+import { revealUp } from '../../animations/variants'
+import { Button } from '../ui/Button'
+import { Container } from '../ui/Container'
+export function ContactHero(){const reduced=useReducedMotion();return <section className="bg-canvas"><Container><motion.div initial="hidden" animate="visible" className="max-w-3xl py-16 md:py-24 lg:py-28"><motion.p variants={revealUp(reduced)} className="text-xs font-bold uppercase tracking-[.2em] text-timber">Get in touch</motion.p><motion.h1 variants={revealUp(reduced,.08)} className="mt-5 text-5xl font-semibold leading-[.94] tracking-[-.055em] text-charcoal sm:text-6xl lg:text-7xl">Let’s create your outdoor space.</motion.h1><motion.p variants={revealUp(reduced,.16)} className="mt-7 max-w-xl text-lg leading-8 text-charcoal/75">Talk to us about pergolas, shade structures, decking, screens, fencing, outdoor living or a custom project.</motion.p><motion.div variants={revealUp(reduced,.22)} className="mt-8"><Button href="#enquiry-form">Start your enquiry</Button></motion.div></motion.div></Container></section>}

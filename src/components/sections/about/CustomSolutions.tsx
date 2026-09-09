@@ -1,0 +1,6 @@
+import { AnimatedSection } from '../../ui/AnimatedSection'
+import { Button } from '../../ui/Button'
+import { Section } from '../../ui/Section'
+import { SectionHeading } from '../../ui/SectionHeading'
+const scope = ['Pergolas & shade structures', 'Decking', 'Privacy screens & fencing', 'Outdoor living', 'Design & build', 'Custom features']
+export function CustomSolutions() { return <Section className="bg-warm-grey/40"><div className="grid gap-10 lg:grid-cols-12"><AnimatedSection className="lg:col-span-6"><SectionHeading eyebrow="Custom solutions" heading="Designed around your home and lifestyle." description="Every outdoor space and every brief is different. We bring together the right elements for the way you want to use yours." /><Button to="/contact" className="mt-8">Discuss your project</Button></AnimatedSection><AnimatedSection className="lg:col-span-5 lg:col-start-8"><ul className="border-t border-warm-grey">{scope.map((item, index) => <li key={item} className="flex items-center justify-between border-b border-warm-grey py-4 text-lg font-medium text-charcoal"><span>{item}</span><span className="text-timber" aria-hidden="true">0{index + 1}</span></li>)}</ul></AnimatedSection></div></Section> }
